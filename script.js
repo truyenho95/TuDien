@@ -64,13 +64,16 @@ document.getElementById('display').addEventListener('click', () => {
 });
 
 document.getElementById('search').addEventListener('click', () => {
+  var isFound = false;
   var wordSearch = document.getElementById('engSearch').value.toLowerCase();
   for (var i = 0; i<eng.length; i++) {
     if (wordSearch==eng[i]) {
       document.getElementById('viSearch').innerHTML = vi[i];
+      isFound = true;
       break;
     }
   }
+  if (!isFound) alert('Not Found!');
 });
 
 document.getElementById('createNewWordBtn').addEventListener('click', () => {
