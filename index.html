@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Từ điển</title>
+</head>
+<body>
+  <div id="index">
+    <h1>Từ điển</h1>
+    <input type="button" id="createNewWordBtn" value="Tạo Từ Mới">
+    <input type="button" id="traCuuBtn" value="Tra từ Anh-Việt">
+  </div>
+  
+  
+  <div id="traCuu">
+    <input type="button" value="Quay lại" id="backBtn1">
+    <label for="engSearch">Từ Tiếng Anh</label>
+    <input type="text" id="engSearch">
+    <input type="button" value="Tra cứu" id="search">
+    <hr>
+    <h5>Nghĩa Tiếng Việt</h5>
+    <p id="viSearch"></p>
+  </div>
+
+  <div id="createNewWord">
+    <input type="button" value="Quay lại" id="backBtn2">
+    <input type="text" id="eng">
+    <input type="text" id="vi">
+    <input type="button" value="Add" id="add">
+    <input type="button" value="Display" id="display">
+    <hr>
+    <div id="list"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
